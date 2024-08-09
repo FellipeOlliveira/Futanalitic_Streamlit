@@ -1,5 +1,4 @@
 import requests
-import bs4
 
 def requisicao_test() -> str:
     test = requests.get('https://www.google.com.br/')

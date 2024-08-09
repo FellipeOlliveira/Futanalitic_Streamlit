@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 
 def requisicao_test() -> str:
     test = requests.get('https://www.google.com.br/')

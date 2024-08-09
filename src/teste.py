@@ -1,6 +1,5 @@
-import streamlit as st
 import requests
-from bs4 import BeautifulSoup
+import bs4
 
 def requisicao_test() -> str:
     test = requests.get('https://www.google.com.br/')

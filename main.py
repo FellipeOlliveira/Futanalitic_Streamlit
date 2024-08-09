@@ -1,6 +1,5 @@
 import streamlit as st
-from src import teste as teste
-
+import src
 # Criação do menu lateral
 st.sidebar.header("Menu de Análise")
 
@@ -14,5 +13,5 @@ st.write("Utilize o menu lateral para inserir os dados e realizar a análise.")
 
 # Botão de Analisar
 if st.sidebar.button("Analisar"):
-    result = teste.requisicao_test()
+    result = src.teste.requisicao_test()
     st.write(f"Resultado do Teste : {result}")

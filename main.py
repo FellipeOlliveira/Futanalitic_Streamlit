@@ -1,5 +1,6 @@
 import streamlit as st
 from engine import teste
+from bs4 import BeautifulSoup
 
 # Criação do menu lateral
 st.sidebar.header("Menu de Análise")

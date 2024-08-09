@@ -1,5 +1,5 @@
 import streamlit as st
-from src import teste
+from engine import teste
 
 # Criação do menu lateral
 st.sidebar.header("Menu de Análise")

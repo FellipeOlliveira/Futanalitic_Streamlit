@@ -1,3 +1,3 @@
 import requests
-from bs4 import BeautifulSoup
 from lxml import etree
+from main import liga_selecionada

@@ -1,12 +1,13 @@
 import streamlit as st
 from engine import teste
 from bs4 import BeautifulSoup
+from utils.ligas import ligas_disponiveis
 
 # Criação do menu lateral
 st.sidebar.header("Menu de Análise")
 
-# Select option
-opcao = st.sidebar.selectbox("Escolha uma opção:", ["Opção 1", "Opção 2", "Opção 3"])
+#select option
+opcao = st.sidebar.selectbox("Escolha uma liga:", [liga for liga in ligas_disponiveis.keys()])
 
 
 # Conteúdo principal da página

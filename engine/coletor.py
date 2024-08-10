@@ -5,7 +5,7 @@ def coletar_partidas_time(liga_selecionada):
     #https://www.soccerstats.com/latest.asp?league=
     session = requests.session()
 
-    jogos_liga = session.get(f'https://www.soccerstats.com/latest.asp?league={liga_selecionada}')
+    jogos_liga = session.get(f'https://www.soccerstats.com/latest.asp?league=australia4')
 
     jogos_html = BeautifulSoup(jogos_liga.text,'html.parser')
 

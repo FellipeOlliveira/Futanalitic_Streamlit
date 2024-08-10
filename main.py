@@ -1,5 +1,5 @@
 import streamlit as st
-from engine import teste
+from engine import coletor
 from bs4 import BeautifulSoup
 from utils.ligas import ligas_disponiveis
 

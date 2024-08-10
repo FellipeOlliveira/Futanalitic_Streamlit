@@ -1,6 +1,5 @@
 import streamlit as st
 from engine import coletor
-from bs4 import BeautifulSoup
 from utils.ligas import ligas_disponiveis
 
 # Criação do menu lateral

@@ -1,14 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
 
-def requisicao_test() -> str:
-    test = requests.get('https://www.google.com.br/')
-    result = test.status_code
-    if result == 200:
-        #content = BeautifulSoup(test.content,'html.parser')
-        return 'Sucesso'
-    elif result == 404:
-        return 'Deu Errado'
+def coletar_partidas_time(liga_selecionada) -> str:
+    #https://www.soccerstats.com/latest.asp?league=
+    session = requests.session()
 
-    else:
-        return 'Ai é foda'
+    jogos_liga = session.get(f'https://www.soccerstats.com/latest.asp?league={liga_selecionada}')
+
+    jogos_html = BeautifulSoup(jogos_liga.text,'html.parser')
+
+    jogos_links = jogos_html.find_all('//div[4]/table[1]/tbody/tr/td/table[1]//tr/td/a[@class="vsmall"]')
+    jogos_links = list(jogos_links.text)
+    print(jogos_links)
+
+    return 'macaco'

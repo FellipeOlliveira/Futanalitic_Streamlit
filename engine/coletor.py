@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from lxml import etree
 
 def coletar_partidas_time(liga_selecionada):
     #https://www.soccerstats.com/latest.asp?league=
@@ -7,8 +7,15 @@ def coletar_partidas_time(liga_selecionada):
 
     jogos_liga = session.get(f'https://www.soccerstats.com/latest.asp?league={liga_selecionada}')
 
-    jogos_html = BeautifulSoup(jogos_liga.text,'html.parser')
+    parser = etree.HTMLParser()
+    tree = etree.fromstring(jogos_liga.content, parser)
 
-    jogos_links = jogos_html.find_all('//div[4]/table[1]/tbody/tr/td/table[1]//tr/td/a[@class="vsmall"]')
+    link_table = tree.xpath('//table[1]//tr//td//table[@id="btable"]')
 
-    return jogos_links
+    if len(link_table) == 0:
+        return 'Não Ha partidas nesse periodo'
+    if len(link_table) == 1:
+        return 'Ja houve partidas nesses periodo'
+    else:
+        links_partidas = tree.xpath('//table[1]//tr//td//table[@id="btable"][1]//td//a[@class ="vsmall"]/@href')
+        return links_partidas

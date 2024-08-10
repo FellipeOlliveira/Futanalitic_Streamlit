@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b3e00d-934f-4ae2-8cf0-b99dfc02906c" name="Changes" comment="commits testes">
-      <change afterPath="$PROJECT_DIR$/engine/factory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/coletor.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/coletor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +255,71 @@
       <option name="project" value="LOCAL" />
       <updated>1723293654090</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723295384159</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295384159</updated>
+    </task>
+    <task id="LOCAL-00025" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723295422151</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295422151</updated>
+    </task>
+    <task id="LOCAL-00026" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723295445685</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295445685</updated>
+    </task>
+    <task id="LOCAL-00027" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723295571534</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1723295571534</updated>
+    </task>
+    <task id="LOCAL-00028" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723299620947</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1723299620947</updated>
+    </task>
+    <task id="LOCAL-00029" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723299648187</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1723299648187</updated>
+    </task>
+    <task id="LOCAL-00030" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723299691546</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1723299691546</updated>
+    </task>
+    <task id="LOCAL-00031" summary="commits testes">
+      <option name="closed" value="true" />
+      <created>1723299717069</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1723299717069</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

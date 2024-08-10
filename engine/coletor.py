@@ -11,7 +11,4 @@ def coletar_partidas_time(liga_selecionada):
 
     jogos_links = jogos_html.find_all('//div[4]/table[1]/tbody/tr/td/table[1]//tr/td/a[@class="vsmall"]')
 
-    if len(jogos_links) == 0:
-        return 'n tem jogos nesse periodo'
-    else:
-        return jogos_links
+    return jogos_links

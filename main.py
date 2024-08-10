@@ -16,5 +16,5 @@ st.write("Utilize o menu lateral para inserir os dados e realizar a análise.")
 
 # Botão de Analisar
 if st.sidebar.button("Analisar"):
-    result = teste.requisicao_test()
+    result = coletor.requisicao_test()
     st.write(f"Resultado do Teste : {result}")

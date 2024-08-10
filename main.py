@@ -17,4 +17,4 @@ st.write("Utilize o menu lateral para inserir os dados e realizar a análise.")
 # Botão de Analisar
 if st.sidebar.button("Analisar"):
     result = coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
-    st.write(f"Resultado do Teste : EM DESENVOLVIMENTO")
+    st.write(result)

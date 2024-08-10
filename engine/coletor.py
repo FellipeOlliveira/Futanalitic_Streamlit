@@ -10,6 +10,5 @@ def coletar_partidas_time(liga_selecionada) -> str:
     jogos_html = BeautifulSoup(jogos_liga.text,'html.parser')
 
     jogos_links = jogos_html.find_all('//div[4]/table[1]/tbody/tr/td/table[1]//tr/td/a[@class="vsmall"]')
-    print(jogos_links)
 
-    return 'macaco'
+    return jogos_links

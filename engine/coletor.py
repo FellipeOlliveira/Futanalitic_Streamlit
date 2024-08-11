@@ -18,4 +18,5 @@ def coletar_partidas_time(liga_selecionada):
         return 'Ja houve partidas nesses periodo'
     else:
         links_partidas = tree.xpath('//table[1]//tr//td//table[@id="btable"][1]//td//a[@class ="vsmall"]/@href')
+        links_partidas = list(map(lambda links: r"https://www.soccerstats.com/" + links, links_partidas))
         return links_partidas

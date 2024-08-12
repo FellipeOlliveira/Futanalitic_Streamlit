@@ -2,7 +2,9 @@ import pandas as pd
 import streamlit as st
 from engine import link_coletor
 from utils.ligas import ligas_disponiveis
+from utils import Time_casa, Time_fora
 from time import sleep
+
 import pandas
 
 # Criação do menu lateral
@@ -17,12 +19,18 @@ st.write("Utilize o menu lateral para inserir os dados e realizar a análise.")
 
 # Botão de Analisar
 if st.sidebar.button("Analisar",key='btn_analisar'):
-    result = link_coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
-    if type(result)== list:
-        result = pd.DataFrame(result,columns=[f'Link partidas: {liga_selecionada}'])
+    links = link_coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
+    if type(links)== list:
+        links = pd.DataFrame(links,columns=[f'{liga_selecionada}'])
     st.subheader("Links das partidas analisadas")
-    st.write(result)
+    st.write(links)
     ##FIM COLETA LINKS
 
+    #for partida in links[f'{liga_selecionada}']:
 
-    st.write("macaco")
+    #para testes :Sucesso
+    time_casa = Time_casa.Casa(links[liga_selecionada])
+    time_fora = Time_fora.Fora(links[liga_selecionada])
+
+    st.write(time_fora.teste())
+    st.write(time_casa.teste())

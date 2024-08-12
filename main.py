@@ -1,7 +1,8 @@
 import pandas as pd
 import streamlit as st
-from engine import coletor
+from engine import link_coletor
 from utils.ligas import ligas_disponiveis
+from time import sleep
 import pandas
 
 # Criação do menu lateral
@@ -19,4 +20,8 @@ if st.sidebar.button("Analisar",key='btn_analisar'):
     result = coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
     if type(result)== list:
         result = pd.DataFrame(result,columns=[f'Link partidas: {liga_selecionada}'])
+    st.subheader("Links das partidas analisadas")
     st.write(result)
+    ##FIM COLETA LINKS
+
+    st.write("macaco")

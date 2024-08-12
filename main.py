@@ -3,7 +3,6 @@ import streamlit as st
 from engine import link_coletor
 from utils.ligas import ligas_disponiveis
 from utils import Time_casa, Time_fora
-from time import sleep
 
 import pandas
 
@@ -26,11 +25,11 @@ if st.sidebar.button("Analisar",key='btn_analisar'):
     st.write(links)
     ##FIM COLETA LINKS
 
-    #for partida in links[f'{liga_selecionada}']:
-
+    for i , partida in enumerate(links[liga_selecionada]):
+        st.subheader(f'Resultado Partida {i}:')
     #para testes :Sucesso
-    time_casa = Time_casa.Casa(links[liga_selecionada])
-    time_fora = Time_fora.Fora(links[liga_selecionada])
+        time_casa = Time_casa.Casa(links[liga_selecionada])
+        time_fora = Time_fora.Fora(links[liga_selecionada])
 
-    st.write(time_fora.teste())
-    st.write(time_casa.teste())
+        st.write(time_fora.teste())
+        st.write(time_casa.teste())

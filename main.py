@@ -24,4 +24,5 @@ if st.sidebar.button("Analisar",key='btn_analisar'):
     st.write(result)
     ##FIM COLETA LINKS
 
+
     st.write("macaco")

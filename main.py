@@ -17,7 +17,7 @@ st.write("Utilize o menu lateral para inserir os dados e realizar a análise.")
 
 # Botão de Analisar
 if st.sidebar.button("Analisar",key='btn_analisar'):
-    result = coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
+    result = link_coletor.coletar_partidas_time(ligas_disponiveis[liga_selecionada])
     if type(result)== list:
         result = pd.DataFrame(result,columns=[f'Link partidas: {liga_selecionada}'])
     st.subheader("Links das partidas analisadas")

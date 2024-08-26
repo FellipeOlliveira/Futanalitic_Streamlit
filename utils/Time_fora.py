@@ -1,5 +1,4 @@
 
-
 class Fora:
 
     def __init__(self,jogo):
